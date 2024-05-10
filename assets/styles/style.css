@@ -165,7 +165,7 @@ body {
   gap: 39px;
   align-items: center;
   flex-wrap: wrap;
-  
+
   justify-content: center;
 }
 .link-container a {
@@ -186,6 +186,7 @@ body {
   height: 393px;
   width: 255px;
   transition: 0.3s;
+  justify-content: center;
 }
 .link-container a:hover {
   transition: 0.3s;
