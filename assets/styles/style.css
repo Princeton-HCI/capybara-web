@@ -395,6 +395,9 @@ footer {
   .links-section {
     padding: 30px 26px 33px 26px;
   }
+  .link-container a{
+    border-radius: 11.414px;
+  }
 }
 @media (max-width: 575px) {
   .links-section h2 {
