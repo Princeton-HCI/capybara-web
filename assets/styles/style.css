@@ -165,6 +165,7 @@ body {
   gap: 39px;
   align-items: center;
   flex-wrap: wrap;
+  
   justify-content: center;
 }
 .link-container a {
