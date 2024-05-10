@@ -165,6 +165,7 @@ body {
   gap: 39px;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .link-container a {
   border-radius: 35.271px;
@@ -283,7 +284,10 @@ footer {
     gap: 13px;
   }
 }
-@media (max-width: 1290px) {
+@media (max-width: 1294px) {
+  .links-section h2 {
+    text-align: center;
+  }
   .video-list {
     padding-left: 32px;
     padding-right: 32px;
@@ -403,6 +407,9 @@ footer {
 }
 
 @media (max-width: 400px) {
+  .links-section h2 {
+    text-align: start;
+  }
   .link-container a {
     font-size: 18px;
     line-height: 110%;
@@ -410,5 +417,10 @@ footer {
     height: 158px;
     width: 137px;
     padding: 0 11px;
+  }
+}
+@media (max-width: 395px) {
+  .links-section h2 {
+    text-align: center;
   }
 }
