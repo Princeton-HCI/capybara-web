@@ -126,7 +126,7 @@ body {
   border-radius: 60px;
   width: 100%;
   height: 600px;
-  object-fit: cover; 
+  object-fit: cover;
 }
 
 .video-element p {
@@ -163,16 +163,14 @@ body {
   margin: 0 auto;
 }
 .link-container {
-  display: flex;
-  gap: 39px;
-  align-items: center;
-  flex-wrap: wrap;
-
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 39px;
+  grid-row-gap: 39px;
 }
 .link-container a {
   border-radius: 35.271px;
-  padding: 0 71.5px;
   border: 3.5px solid var(--color-primary-black-100, #191611);
   text-align: center;
   font-family: "Zilla Slab";
@@ -185,10 +183,11 @@ body {
   text-decoration: none;
   display: flex;
   align-items: center;
-  height: 393px;
-  width: 255px;
-  transition: 0.3s;
   justify-content: center;
+  transition: 0.3s;
+  width: 100%;
+  height: 25.5vw;
+  max-height: 393px;
 }
 .link-container a:hover {
   transition: 0.3s;
@@ -284,20 +283,22 @@ footer {
   .hero-banner-icon img {
     max-width: 120px;
   }
-  .link-container {
-    gap: 13px;
-  }
 }
 @media (max-width: 1294px) {
-  .links-section h2 {
-    text-align: center;
-  }
   .video-list {
     padding-left: 32px;
     padding-right: 32px;
   }
 }
 @media (max-width: 990px) {
+  .link-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 13px;
+    grid-row-gap: 13px;
+  }
+
   .hero-banner-icon:nth-child(5) {
     right: 200px;
   }
@@ -380,9 +381,9 @@ footer {
     max-width: 241px;
   }
   .video-list {
-    padding-top: 636px; 
+    padding-top: 636px;
     padding-bottom: 64px;
-    gap: 78px; 
+    gap: 78px;
   }
   .video-element p {
     padding-top: 17px;
@@ -405,27 +406,7 @@ footer {
     font-size: 20px;
     line-height: 110%; /* 22px */
     letter-spacing: -0.46px;
-    height: 158px;
-    width: 128px;
-    padding: 0 15px;
-  }
-}
-
-@media (max-width: 400px) {
-  .links-section h2 {
-    text-align: start;
-  }
-  .link-container a {
-    font-size: 18px;
-    line-height: 110%;
-    letter-spacing: -0.46px;
-    height: 158px;
-    width: 137px;
-    padding: 0 11px;
-  }
-}
-@media (max-width: 395px) {
-  .links-section h2 {
-    text-align: center;
+    height: 40vh;
+    max-height: 158px;
   }
 }
