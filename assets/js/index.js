@@ -1,28 +1,21 @@
-var video_el = document.querySelectorAll("video");
-video_el.forEach((video) => {
-  video.addEventListener("play", function () {
-    if (video.paused && !video.classList.contains("clicked")) {
+window.addEventListener("load", function (event) {
+  var video_el = document.querySelectorAll("video");
+  var playButton = document.querySelector(".playButton");
+  video_el.forEach((video) => {
+    playButton.addEventListener("click", function () {
       video.play();
-      video.classList.add("clicked");
-    }
-  });
+      playButton.style.display = "none";
+    });
 
-  video.addEventListener("click", function () {
-    video.classList.add("clicked");
-    if (video.paused) {
-      video.play();
-    } else {
-      video.pause();
-    }
-  });
+    video.addEventListener("ended", function () {
+      playButton.style.display = "block";
+    });
 
-  video.addEventListener("webkitendfullscreen", function () {
-    if (video.classList.contains("clicked")) {
-      video.classList.remove("clicked");
-    }
-  });
-
-  video.addEventListener("ended", function () {
-    video.load();
+    video.addEventListener("webkitendfullscreen", function () {
+      if (!video.paused) {
+        video.pause();
+        playButton.style.display = "block";
+      }
+    });
   });
 });
