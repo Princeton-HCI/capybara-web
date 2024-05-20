@@ -57,6 +57,14 @@ body {
   max-width: 730px;
 }
 
+.hero-banner-title-sans {
+  font-family: "IBM Plex Sans";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: -1.38px;
+}
 .hero-banner-title span {
   color: var(--color-primary-black-100, #191611);
   font-family: "Zilla Slab";
@@ -280,15 +288,26 @@ video::-webkit-media-controls-enclosure {
 video.clicked {
   display: block !important;
 }
-
 @media (max-width: 1519px) {
+  .hero-banner-icon img {
+    width: 80%;
+  }
   .links-section {
     padding: 71px 28px 87px 28px;
   }
 }
+@media (max-width: 1440px) {
+  .hero-banner-icon img {
+    width: 75%;
+  }
+  .hero-banner-icon:nth-child(1) {
+    top: 95px;
+  }
+}
+
 @media (max-width: 1346px) {
   .hero-banner-icon img {
-    max-width: 120px;
+    max-width: 65%;
   }
 }
 @media (max-width: 1294px) {
@@ -296,13 +315,20 @@ video.clicked {
     padding-left: 32px;
     padding-right: 32px;
   }
+  .hero-banner-icon img {
+    max-width: 60%;
+  }
+  .hero-banner-icon:nth-child(1) {
+    top: 115px;
+  }
 }
+
 @media (max-width: 990px) {
   .link-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 13px;
+    grid-column-gap: 16px;
     grid-row-gap: 13px;
   }
 
@@ -313,7 +339,8 @@ video.clicked {
     left: 156px;
   }
   .hero-banner-icon:nth-child(3) {
-    right: 30px;
+    right: 3px;
+    top: 472px;
   }
 }
 @media (max-width: 768px) {
@@ -368,7 +395,6 @@ video.clicked {
     max-width: 70px;
   }
   .hero-banner-icon:nth-child(1) {
-    top: 83px;
     left: 70px;
   }
   .hero-banner-icon:nth-child(2) {
@@ -376,8 +402,8 @@ video.clicked {
     right: 45%;
   }
   .hero-banner-icon:nth-child(3) {
-    top: 107px;
-    right: 79px;
+    top: 137px;
+    right: 35px;
   }
   .hero-banner-icon:nth-child(4) {
     top: 398px;
@@ -408,6 +434,15 @@ video.clicked {
   }
   .link-container a {
     border-radius: 11.414px;
+    border: 2px solid var(--color-primary-black-100, #191611);
+  }
+  .hero-banner-title-sans {
+    font-family: "IBM Plex Sans";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    letter-spacing: -0.736px;
   }
 }
 @media (max-width: 640px) {
