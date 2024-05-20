@@ -80,6 +80,7 @@ body {
 }
 .hero-banner-icon img {
   width: 100%;
+  max-width: 174px;
 }
 
 .hero-banner-icon:nth-child(1) {
