@@ -476,7 +476,7 @@ video.clicked {
     top: 80vh;
   }
 }
-
+ 
 @media (min-width: 968px) {
   .video-list {
     padding-top: 800px; 
