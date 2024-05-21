@@ -344,6 +344,15 @@ video.clicked {
     top: 472px;
   }
 }
+@media (max-height: 860px) {
+  .hero-banner {
+    top: 90vh;
+  }
+  .video-list {
+    padding-top: 80vh;
+  }
+}
+
 @media (max-width: 768px) {
   .download-link {
     max-width: 128px;
@@ -446,6 +455,14 @@ video.clicked {
     letter-spacing: -0.736px;
   }
 }
+@media (max-height: 690px) {
+  .hero-banner {
+    top: 85vh;
+  }
+  .video-list {
+    padding-top: 75vh;
+  }
+}
 @media (max-width: 640px) {
   .hero-logo {
     top: -8vw;
@@ -463,5 +480,13 @@ video.clicked {
     letter-spacing: -0.46px;
     height: 40vh;
     max-height: 158px;
+  }
+}
+@media (max-height: 465px) {
+  .hero-banner {
+    top: 80vh;
+  }
+  .video-list {
+    padding-top: 65vh;
   }
 }
