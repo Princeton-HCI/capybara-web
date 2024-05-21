@@ -348,8 +348,8 @@ video.clicked {
   .hero-banner {
     top: 90vh;
   }
-  .video-list {
-    padding-top: 80vh;
+  .video-list{
+    padding-top: 635px;
   }
   .video-container video {
     height: 96vh;
@@ -428,7 +428,7 @@ video.clicked {
     max-width: 241px;
   }
   .video-list {
-    padding-top: 636px;
+    padding-top: 635px;
     padding-bottom: 64px;
     gap: 78px;
   }
@@ -459,9 +459,6 @@ video.clicked {
   .hero-banner {
     top: 85vh;
   }
-  .video-list {
-    padding-top: 75vh;
-  }
 }
 @media (max-width: 640px) {
   .hero-logo {
@@ -486,7 +483,5 @@ video.clicked {
   .hero-banner {
     top: 80vh;
   }
-  .video-list {
-    padding-top: 65vh;
-  }
+
 }
