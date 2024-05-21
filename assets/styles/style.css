@@ -116,7 +116,7 @@ body {
 }
 
 .video-list {
-  padding-top: 730px;
+  padding-top: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -479,6 +479,6 @@ video.clicked {
 
 @media (min-width: 968px) {
   .video-list {
-    padding-top: 730px;
+    padding-top: 800px;
   }
 }
