@@ -351,6 +351,9 @@ video.clicked {
   .video-list {
     padding-top: 80vh;
   }
+  .video-container video {
+    height: 96vh;
+  }
 }
 
 @media (max-width: 768px) {
@@ -383,9 +386,6 @@ video.clicked {
     padding-top: 59px;
     margin-left: auto;
     max-width: 185px;
-  }
-  .video-container video {
-    height: 836px;
   }
   .hero-banner {
     padding-top: 202px;
