@@ -336,7 +336,7 @@ video.clicked {
     top: 472px;
   }
 }
-@media (max-height: 860px) {
+@media (max-height: 900px) {
   .hero-banner {
     top: 90vh;
   }
