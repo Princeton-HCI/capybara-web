@@ -350,7 +350,7 @@ video.clicked {
 @media (max-height: 790px) {
   .hero-banner {
     top: 80vh;
-  }
+  } 
 }
 @media (max-width: 768px) {
   .download-link {
