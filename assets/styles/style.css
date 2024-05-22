@@ -338,7 +338,7 @@ video.clicked {
 }
 @media (max-height: 900px) {
   .hero-banner {
-    top: 90vh;
+    top: 720px;
   }
   .video-list {
     /* padding-top: 635px; */
@@ -347,7 +347,11 @@ video.clicked {
     height: 96vh;
   }
 }
-
+@media (max-height: 790px) {
+  .hero-banner {
+    top: 80vh;
+  }
+}
 @media (max-width: 768px) {
   .download-link {
     max-width: 128px;
@@ -447,11 +451,7 @@ video.clicked {
     letter-spacing: -0.736px;
   }
 }
-@media (max-height: 690px) {
-  .hero-banner {
-    top: 85vh;
-  }
-}
+
 @media (max-width: 640px) {
   .hero-logo {
     top: -8vw;
@@ -469,11 +469,6 @@ video.clicked {
     letter-spacing: -0.46px;
     height: 40vh;
     max-height: 158px;
-  }
-}
-@media (max-height: 465px) {
-  .hero-banner {
-    top: 80vh;
   }
 }
  
