@@ -353,6 +353,9 @@ video.clicked {
   } 
 }
 @media (max-width: 768px) {
+  .video-element video {
+    height: 80vh;
+  }
   .download-link {
     max-width: 128px;
     top: 70px;

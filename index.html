@@ -14,15 +14,26 @@
     />
   </head>
   <body>
-
     <a href="#" class="download-link">
       <img src="./assets/img/app-store-button.png" alt="Share button" />
     </a>
     <section class="video-hero-section">
       <div class="video-container">
-        <video width="100%" muted autoplay loop playsinline>
+        <video
+          width="100%"
+          muted
+          autoplay
+          loop
+          playsinline
+          class="video-desktop"
+        >
           <source
             src="./assets/videos/Full video.mp4"
+            type="video/mp4"
+            media="(min-width: 768px)"
+          />
+          <source
+            src="./assets/videos/Full video_mobile.mp4"
             type="video/mp4"
           />
           Your browser does not support the video tag.
@@ -31,7 +42,8 @@
     </section>
     <section class="hero-banner">
       <h1 class="hero-banner-title">
-        Learn<span> coding </span><span class="hero-banner-title-sans">and create mesmerizing </span> 
+        Learn<span> coding </span
+        ><span class="hero-banner-title-sans">and create mesmerizing </span>
         <span>AR experiences</span>
       </h1>
       <div class="hero-logo">
@@ -57,9 +69,10 @@
     </section>
     <section class="video-list">
       <div class="video-element">
-        <video muted autoplay loop playsinline>
+        <video muted autoplay loop playsinline class="video-desktop">
+          <source src="./assets/videos/video short 01.mp4" type="video/mp4" media="(min-width: 768px)"/>
           <source
-            src="./assets/videos/video short 01.mp4"
+            src="./assets/videos/video short 01_mobile.mp4"
             type="video/mp4"
           />
           Your browser does not support the video tag.
@@ -67,9 +80,10 @@
         <p>Easy as Drag-and-Drop</p>
       </div>
       <div class="video-element">
-        <video muted autoplay loop playsinline>
+        <video muted autoplay loop playsinline class="video-desktop">
+          <source src="./assets/videos/video short 02.mp4" type="video/mp4" media="(min-width: 768px)"/>
           <source
-            src="./assets/videos/video short 02.mp4"
+            src="./assets/videos/video short 02_mobile.mp4"
             type="video/mp4"
           />
           Your browser does not support the video tag.
@@ -77,9 +91,14 @@
         <p>Make your capybara interactive</p>
       </div>
       <div class="video-element">
-        <video muted autoplay loop playsinline>
+        <video muted autoplay loop playsinline class="video-desktop">
           <source
             src="./assets/videos/video short 03.mp4"
+            type="video/mp4"
+            media="(min-width: 768px)"
+          />
+          <source
+            src="./assets/videos/video short 03_mobile.mp4"
             type="video/mp4"
           />
           Your browser does not support the video tag.
@@ -94,32 +113,40 @@
           <a
             href="https://docs.google.com/presentation/d/1hezLEvx_9E2qUQiqup1SVdAPDqPcIf9ueLpg_UlEdg8/edit?usp=drive_link"
             target="_blank"
-            >Shapes<br/> Adventure</a
+            >Shapes<br />
+            Adventure</a
           >
           <a
-            href="https://www.figma.com/exit?url=https%3A%2F%2Fdocs.google.com%2Fpresentation%2Fd%2F1B1ymWpY6E-lUFK8suD60qD30gNUxRrNppBts2DPMubQ%2Fedit%3Fusp%3Ddrive_link"
+            href="https://docs.google.com/presentation/d/1B1ymWpY6E-lUFK8suD60qD30gNUxRrNppBts2DPMubQ/edit#slide=id.g1f7e65f170c_0_0"
             target="_blank"
-            >Guess<br/> the<br/> distance</a
+            >Guess<br />
+            the<br />
+            distance</a
           >
           <a
-            href="https://www.figma.com/exit?url=https%3A%2F%2Fdocs.google.com%2Fpresentation%2Fd%2F1pPfx2miEytC1ER20vTSqYBfNLyBnziRn4IyXRACpmiE%2Fedit%3Fusp%3Ddrive_link"
+            href="https://docs.google.com/presentation/d/1pPfx2miEytC1ER20vTSqYBfNLyBnziRn4IyXRACpmiE/edit#slide=id.g1f7e65f170c_0_54"
             target="_blank"
-            >Guess<br/> the word</a
+            >Guess<br />
+            the word</a
           >
           <a
-            href="https://www.figma.com/exit?url=https%3A%2F%2Fdocs.google.com%2Fpresentation%2Fd%2F1zfuHMtSSn228NRdRiAsejuqyZUPh2W7VKqYKoyfo5bY%2Fedit%3Fusp%3Ddrive_link"
+            href="https://docs.google.com/presentation/d/1zfuHMtSSn228NRdRiAsejuqyZUPh2W7VKqYKoyfo5bY/edit#slide=id.g1f7e65f170c_0_117"
             target="_blank"
-            >HOt/cold<br/> Game</a
+            >HOt/cold<br />
+            Game</a
           >
           <a
-            href="https://www.figma.com/exit?url=https%3A%2F%2Fdocs.google.com%2Fpresentation%2Fd%2F1zNE-NhmZVHmzyjvzh2PQzsj8Gn_YSYy_ejTJthD-rms%2Fedit%3Fusp%3Ddrive_link"
+            href="https://docs.google.com/presentation/d/1zNE-NhmZVHmzyjvzh2PQzsj8Gn_YSYy_ejTJthD-rms/edit#slide=id.g1f7f1c5c334_0_1"
             target="_blank"
-            >Write a<br/> secret<br/> message</a
+            >Write a<br />
+            secret<br />
+            message</a
           >
           <a
-            href="https://www.figma.com/exit?url=https%3A%2F%2Fdocs.google.com%2Fpresentation%2Fd%2F12Ew11Yoqpe_Gz1aRLS11xOnseP-Gqp6noiTjQOCFNaM%2Fedit%3Fusp%3Ddrive_link"
+            href="https://docs.google.com/presentation/d/12Ew11Yoqpe_Gz1aRLS11xOnseP-Gqp6noiTjQOCFNaM/edit#slide=id.g2d9dc1dbd53_0_0"
             target="_blank"
-            >Time to<br/> code</a
+            >Time to<br />
+            code</a
           >
         </div>
       </div>
