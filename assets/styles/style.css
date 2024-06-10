@@ -289,6 +289,12 @@ video::-webkit-media-controls-enclosure {
 video.clicked {
   display: block !important;
 }
+.video-desktop {
+  display: block;
+}
+.video-mobile {
+  display: none;
+}
 @media (max-width: 1519px) {
   .hero-banner-icon img {
     width: 80%;
@@ -338,7 +344,7 @@ video.clicked {
 }
 @media (max-height: 900px) {
   .hero-banner {
-    top: 720px; 
+    top: 720px;
   }
   .video-list {
     /* padding-top: 635px; */
@@ -350,7 +356,7 @@ video.clicked {
 @media (max-height: 790px) {
   .hero-banner {
     top: 80vh;
-  } 
+  }
 }
 @media (max-width: 768px) {
   .video-element video {
@@ -461,6 +467,12 @@ video.clicked {
   }
 }
 @media (max-width: 575px) {
+  .video-desktop {
+    display: none;
+  }
+  .video-mobile {
+    display: block;
+  }
   .links-section h2 {
     font-size: 23px;
     line-height: 134%; /* 30.82px */
@@ -474,9 +486,10 @@ video.clicked {
     max-height: 158px;
   }
 }
- 
+
+
 @media (min-width: 968px) {
   .video-list {
-    padding-top: 800px; 
+    padding-top: 800px;
   }
 }
