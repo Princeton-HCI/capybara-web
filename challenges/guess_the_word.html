@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capybara: Guess the Word</title>
+  <meta name="description" content="Guess the Word: A fun and interactive coding challenge for kids!">
+  <meta name="keywords" content="coding challenge, Scratch blocks, guess the word, interactive learning, alphabet, words">
+  <link rel="stylesheet" href="../assets/styles/styles-template.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet"/>
+  <link 
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet"/>
+</head>
+<body>
+  <header class="header">
+    <h1>GUESS THE WORD</h1>
+    <p>Let’s make our Capybara spell a secret word!</p>
+  </header>
+  <main class="main-content">
+    <section class="instructions">
+      <h2>What You'll Need</h2>
+      <div class="instruction-blocks">
+        <div class="icon-card">
+          <div class="setup-label">SETUP</div>
+          <div>
+            <img src="../assets/img/challenges/icons/Participants.png" alt="Participants">
+            <p>Participants: 1</p>
+          </div>
+          <div>
+            <img src="../assets/img/challenges/icons/Devices.png" alt="Devices">
+            <p>Devices: 1</p>
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="blocks-label">BLOCKS</div>
+          <img src="../assets/img/challenges/blocks/looks/StartTrail.png" alt="Start Trail Block"/>
+          <img src="../assets/img/challenges/blocks/motion/Forward.png" alt="Forward Block"/>
+          <img src="../assets/img/challenges/blocks/motion/RotateRight.png" alt="Rotate Right Block"/>
+        </div>
+      </div>
+    </section>
+    <section class="steps">
+      <div class="step">
+        <h2>1. Planning</h2>
+        <p>Scatter the letters of the alphabet on the floor.</p>
+        <p>You can print and cut them, draw them on the floor, or write them however you want!</p>
+        <div class="image-container">
+          <img src="../assets/img/challenges/guess-the-word/1.1.jpg" alt="Alphabet letters scattered on the floor">
+        </div>
+        <section class="hints-card">
+          <p>
+            <span>
+              <img src="../assets/img/challenges/icons/Lightbulb.png" alt="Idea"> Hint: Place your Capybara in the middle, facing the letter "A", as it's the first letter of the alphabet.
+            </span>
+          </p>
+        </section>
+      </div>
+      <div class="step">
+        <h2>2. Spelling a Secret Word</h2>
+        <p>Now code your Capybara to go from one letter to another, spelling a secret word.</p>
+        <p>You can use <img src="../assets/img/challenges/blocks/motion/Forward.png" alt="Forward"> to reach a letter,
+          then <img src="../assets/img/challenges/blocks/motion/RotateRight.png" alt="Rotate Right"> to turn to the next letter.
+        </p>
+        <p>In this example, the word was the answer for <b><i>"What's your favorite place for vacations?"</i></b></p>
+        <div class="image-container">
+          <img src="../assets/img/challenges/guess-the-word/2.1.jpg" alt="Capybara facing letter 'B'">
+          <img src="../assets/img/challenges/guess-the-word/2.2.jpg" alt="Capybara facing letter 'E'">
+          <img src="../assets/img/challenges/guess-the-word/2.3.jpg" alt="Capybara facing letter 'A'">
+          <img src="../assets/img/challenges/guess-the-word/2.4.jpg" alt="Capybara facing letter 'C'">
+          <img src="../assets/img/challenges/guess-the-word/2.5.jpg" alt="Capybara facing letter 'H'">
+        </div>
+        <p>Answer: <b>Beach</b></p>
+        <section class="hints-card">
+            <p>
+              <span>
+                <img src="../assets/img/challenges/icons/Lightbulb.png" alt="Idea"> Hint: You can use
+                <img src="../assets/img/challenges/blocks/looks/StartTrail.png" alt="Start Trail"> to paint while the Capybara is walking.
+              </span>
+            </p>
+          </section>
+      </div>
+    <section class="block-inventory">
+      <h2>Block Inventory</h2>
+      <div class="events">
+        <h3>EVENTS</h3>
+        <img src="../assets/img/challenges/blocks/events/Touched.png" alt="When character is touched">
+      </div>
+      <div class="motion">
+        <h3>MOTION</h3>
+        <img src="../assets/img/challenges/blocks/motion/Forward.png" alt="Forward 10">
+        <img src="../assets/img/challenges/blocks/motion/RotateRight.png" alt="Rotate Right 120">
+        <img src="../assets/img/challenges/blocks/motion/RotateLeft.png" alt="Rotate Left -200">
+      </div>
+      <div class="looks">
+        <h3>LOOKS</h3>
+        <img src="../assets/img/challenges/blocks/looks/StartTrail.png" alt="Start Trail">
+        <img src="../assets/img/challenges/blocks/looks/EndTrail.png" alt="End Trail">
+      </div>
+      <div class="control">
+        <h3>CONTROL</h3>
+        <img src="../assets/img/challenges/blocks/control/Forever.png" alt="Forever">
+        <img src="../assets/img/challenges/blocks/control/Repeat.png" alt="Repeat">
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>Made with <svg width="15" height="15" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 107.39"><defs><style>.cls-1{fill:#e74c3b;fill-rule:evenodd;}</style></defs><title>red-heart</title>
+      <path class="cls-1" d="M60.83,17.18c8-8.35,13.62-15.57,26-17C110-2.46,131.27,21.26,119.57,44.61c-3.33,6.65-10.11,14.56-17.61,22.32-8.23,8.52-17.34,16.87-23.72,23.2l-17.4,17.26L46.46,93.55C29.16,76.89,1,55.92,0,29.94-.63,11.74,13.73.08,30.25.29c14.76.2,21,7.54,30.58,16.89Z"/></svg> by <a href="https://ar.cs.princeton.edu/index.html#team">Princeton HCI</a>.</p>
+    <p>Inspired by <a href="https://scratch.mit.edu/">Scratch</a> from the <a href="https://www.media.mit.edu/groups/lifelong-kindergarten/">Lifelong Kindergarten Group</a></a>.</p>
+  </footer>
+  
+</body>
+</html> 

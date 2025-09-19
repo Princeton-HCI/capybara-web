@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capybara: Hot/Cold Game</title>
+  <meta name="description" content="Hot/Cold Game: A fun and interactive coding challenge for kids!">
+  <meta name="keywords" content="coding challenge, Scratch blocks, hot cold game, interactive learning, treasure hunt">
+  <link rel="stylesheet" href="../assets/styles/styles-template.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet"/>
+  <link 
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet"/>
+</head>
+<body>
+  <header class="header">
+    <h1>HOT/COLD GAME</h1>
+    <p>Let's play a fun treasure hunt! "Hot/Cold" is a game where one person hides an object and gives hints by saying "hot" when you're close and "cold" when you're far. Find the hidden object as quickly as you can using the hints.
+    </p>
+  </header>
+  <main class="main-content">
+    <section class="instructions">
+      <h2>What You'll Need</h2>
+      <div class="instruction-blocks">
+        <div class="icon-card">
+          <div class="setup-label">SETUP</div>
+          <div>
+            <img src="../assets/img/challenges/icons/Participants.png" alt="Participants">
+            <p>Participants: 2</p>
+          </div>
+          <div>
+            <img src="../assets/img/challenges/icons/Devices.png" alt="Devices">
+            <p>Devices: 1</p>
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="blocks-label">BLOCKS</div>
+          <img src="../assets/img/challenges/blocks/motion/Forward.png" alt="Forward Block"/>
+          <img src="../assets/img/challenges/blocks/motion/RotateRight.png" alt="Rotate Right Block"/>
+        </div>
+      </div>
+    </section>
+    <section class="steps">
+      <div class="step">
+        <h2>1. Planning</h2>
+        <p>This is a game to play with a friend.</p>
+        <p>Look around wherever you are and pick an object from the place.</p>
+        <p>But be careful! Don't tell your friend which object you chose. Just think about it.</p>
+      </div>
+      <div class="step">
+        <h2>2. Guessing the Object</h2>
+        <p>Now your friend will place the Capybara in the space and try to guess which object you thought of.</p>
+        <p>Your friend has to move the Capybara close to the objects. When it gets close to the object you chose,
+            you should say "hot". If it moves away, you should say "cold".
+        </p>
+        <section class="hints-card">
+            <p>
+              <span>
+                <img src="../assets/img/challenges/icons/Lightbulb.png" alt="Idea"> Hint: Your friend can move the Capybara by using
+                <img src="../assets/img/challenges/blocks/motion/Forward.png" alt="Forward"> and <img src="../assets/img/challenges/blocks/motion/RotateRight.png" alt="Rotate Right">
+                Alternatively, your friend can tap, hold, and grab the Capybara and move it around.
+              </span>
+            </p>
+          </section>
+          <div class="image-container">
+            <img src="../assets/img/challenges/hot-cold-game/2.1.jpg" alt="Capybara with forward and rotate right blocks">
+            <img src="../assets/img/challenges/hot-cold-game/2.2.gif" alt="Moving around the Capybara">
+          </div>
+      </div>
+      <div class="step">
+        <h2>3. Take it Further</h2>
+        <p>Now take turns!</p>
+        <p>When your friend finds the object, take turns and let your friend choose an object for you to guess.<p>
+      </div>
+    <section class="block-inventory">
+      <h2>Block Inventory</h2>
+      <div class="events">
+        <h3>EVENTS</h3>
+        <img src="../assets/img/challenges/blocks/events/Touched.png" alt="When character is touched">
+      </div>
+      <div class="motion">
+        <h3>MOTION</h3>
+        <img src="../assets/img/challenges/blocks/motion/Forward.png" alt="Forward 10">
+        <img src="../assets/img/challenges/blocks/motion/RotateRight.png" alt="Rotate Right 120">
+        <img src="../assets/img/challenges/blocks/motion/RotateLeft.png" alt="Rotate Left -200">
+      </div>
+      <div class="looks">
+        <h3>LOOKS</h3>
+        <img src="../assets/img/challenges/blocks/looks/StartTrail.png" alt="Start Trail">
+        <img src="../assets/img/challenges/blocks/looks/EndTrail.png" alt="End Trail">
+      </div>
+      <div class="control">
+        <h3>CONTROL</h3>
+        <img src="../assets/img/challenges/blocks/control/Forever.png" alt="Forever">
+        <img src="../assets/img/challenges/blocks/control/Repeat.png" alt="Repeat">
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>Made with <svg width="15" height="15" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 107.39"><defs><style>.cls-1{fill:#e74c3b;fill-rule:evenodd;}</style></defs><title>red-heart</title>
+      <path class="cls-1" d="M60.83,17.18c8-8.35,13.62-15.57,26-17C110-2.46,131.27,21.26,119.57,44.61c-3.33,6.65-10.11,14.56-17.61,22.32-8.23,8.52-17.34,16.87-23.72,23.2l-17.4,17.26L46.46,93.55C29.16,76.89,1,55.92,0,29.94-.63,11.74,13.73.08,30.25.29c14.76.2,21,7.54,30.58,16.89Z"/></svg> by <a href="https://ar.cs.princeton.edu/index.html#team">Princeton HCI</a>.</p>
+    <p>Inspired by <a href="https://scratch.mit.edu/">Scratch</a> from the <a href="https://www.media.mit.edu/groups/lifelong-kindergarten/">Lifelong Kindergarten Group</a></a>.</p>
+  </footer>
+  
+</body>
+</html> 
