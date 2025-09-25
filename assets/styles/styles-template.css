@@ -1,0 +1,571 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Root Styles */
+:root {
+    --secondary-color: #2D2D2D;
+    --background-color: #FFD580; 
+    --text-color: #2D2D2D;
+    --card-background: #FFFFFF;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: "IBM Plex Sans", sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background: linear-gradient(135deg, #FFD580 0%, #FFE5B4 100%);
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h10v10H0zM10 10h10v10H10z" fill="%232D2D2D" fill-opacity="0.05"/></svg>');
+    opacity: 0.5;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 3rem 2rem;
+    margin-bottom: 2rem;
+    color: black;
+    position: relative;
+}
+
+.header::before {
+    display: none; /* Remove the header's pattern overlay */
+}
+
+.header h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.05em;
+    position: relative;
+    text-shadow: 3px 3px 0 rgba(0,0,0,0.1);
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+    background: linear-gradient(45deg, #2D2D2D, #4a4a4a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header p {
+    font-size: 1.6rem;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.9;
+    position: relative;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #2D2D2D;
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Layout */
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.main-content p {
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+/* Styling for clocks container */
+.clocks-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.clock-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+.time-label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #2D2D2D;
+}
+
+.clock-item img {
+    max-width: 150px;
+    height: auto;
+}
+
+/* Icon Card */
+.icon-card {
+    color: black;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    background: var(--color-primary-white-100, #ffedc5);
+    border-radius: 15px;
+    padding: 1.5rem;
+    border: 2px solid black;
+    transition: transform 0.2s ease-in-out;
+    flex: 1;
+    min-width: 250px;
+    position: relative;
+}
+
+.icon-card div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Cards */
+.instructions,
+.step,
+.extra,
+.block-inventory {
+    background: var(--card-background);
+    border-radius: 20px;
+    box-shadow: 0 8px 16px var(--shadow-color);
+    padding: 2rem;
+    transition: transform 0.2s ease-in-out;
+    border: 2px solid black;
+}
+
+.instructions:hover,
+.step:hover,
+.extra:hover,
+.block-inventory:hover,
+.events:hover,
+.motion:hover,
+.looks:hover,
+.control:hover   {
+    transform: translateY(-5px);
+}
+
+/* Section Headers */
+h2 {
+    color: var(--secondary-color);
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+/* Instruction Blocks */
+.instruction-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1.5rem 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.instruction-blocks .icon-card h3,
+.instruction-blocks .image-container h3 {
+    text-align: center;
+    margin-bottom: 1rem; /* Adjust margin to match block inventory headings */
+    color: black; /* Ensure color is black */
+    font-size: 1.4rem; /* Match block inventory heading font size */
+    font-weight: 600; /* Match block inventory heading font weight */
+    width: 100%; /* Ensure heading takes full width of the card */
+}
+
+.instruction-blocks img {
+    width: 180px;
+    height: 65px;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+.instruction-blocks img:hover {
+    transform: scale(1.05);
+}
+
+.instruction-blocks .image-container {
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: var(--color-primary-white-100, #ffedc5);
+    border-radius: 15px;
+    padding: 1.5rem;
+    border: 2px solid black;
+    transition: transform 0.2s ease-in-out;
+    flex: 2;
+    min-width: 300px;
+    position: relative;
+}
+
+.instruction-blocks .blocks-label,
+.instruction-blocks .setup-label {
+    position: absolute;
+    top: -20px; /* Adjust vertical position */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    background: #ffedc5; /* Match card background */
+    border: 2px solid black; /* Add border */
+    padding: 0.3rem 1.5rem; /* Adjust padding for shape */
+    border-radius: 8px; /* Subtle border-radius */
+    font-size: 1rem; /* Adjust font size */
+    font-weight: 600; /* Match heading font weight */
+    color: black; /* Match text color */
+    z-index: 1; /* Ensure it's above the card */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.instruction-blocks .blocks-label::before,
+.instruction-blocks .blocks-label::after,
+.instruction-blocks .setup-label::before,
+.instruction-blocks .setup-label::after {
+    content: '';
+    position: absolute;
+    top: 100%; /* Position at the bottom of the label */
+    border: solid transparent;
+    pointer-events: none;
+    border-color: rgba(136, 183, 213, 0);
+    border-top-color: black; /* Color of the arrow/trapezoid point */
+    border-width: 8px;
+    margin-top: 0px;
+}
+
+.instruction-blocks .blocks-label::before,
+.instruction-blocks .setup-label::before {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.instruction-blocks .blocks-label::after,
+.instruction-blocks .setup-label::after {
+    left: 50%;
+    transform: translateX(-50%);
+    border-top-color: #ffedc5; /* Match background color */
+    margin-top: -2px; /* Adjust to overlap border */
+}
+
+/* Steps */
+.steps {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.step {
+    position: relative;
+}
+
+.step h2 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+.step p {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+.step .image-container {
+    display: flex;
+    gap: 2rem;
+    margin: 1.5rem 0;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.step .image-container img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 12px;
+    transition: transform 0.2s ease;
+    /* object-fit: contain; */
+}
+
+.step .image-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Wide image container for larger images */
+.step .wide-image-container {
+    display: flex;
+    gap: 2rem;
+    margin: 1.5rem 0;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.step .wide-image-container img {
+    max-width: 400px;
+    height: auto;
+    border-radius: 12px;
+    transition: transform 0.2s ease;
+}
+
+.step .wide-image-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Hints and inline blocks */
+.hints p {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    min-height: 65px;  /* Match block height */
+}
+
+.hints img[src*="/blocks/"] {
+    vertical-align: middle;
+    position: relative;
+    top: 5px;  /* Fine-tune vertical position */
+}
+
+
+/* Ensure text aligns with blocks */
+p img[src*="/blocks/"] {
+    vertical-align: middle;
+    position: relative;
+    top: 5px;
+}
+
+/* Block styles for all sections */
+[class*="blocks"] img,
+.hints img[src*="/blocks/"],
+.step img[src*="/blocks/"],
+.extra img[src*="/blocks/"],
+.events img,
+.motion img,
+.looks img,
+.control img {
+    width: 180px;
+    height: 65px;
+    object-fit: contain;
+    margin: 0.5rem;
+    filter: drop-shadow(0 4px 8px var(--shadow-color));
+    vertical-align: middle;  /* Added this */
+    transition: transform 0.2s ease;
+}
+
+/* Remove the general filter styles and target specific images */
+[src*="/blocks/looks/"],
+img[alt*="Start Trail"],
+img[alt*="End Trail"] {
+    filter: drop-shadow(0 4px 8px var(--shadow-color));
+}
+
+[src*="/blocks/motion/"],
+img[alt*="Forward"],
+img[alt*="Rotate"] {
+    filter: drop-shadow(0 4px 8px var(--shadow-color));
+}
+
+[src*="/blocks/control/"],
+img[alt*="Repeat"],
+img[alt*="Forever"] {
+    filter: drop-shadow(0 4px 8px var(--shadow-color));
+}
+
+[src*="/blocks/events/"],
+img[alt*="When"] {
+    filter: drop-shadow(0 4px 8px var(--shadow-color));
+}
+
+/* Block Inventory */
+.block-inventory {
+    background: var(--card-background);
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.block-inventory h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.events,
+.motion,
+.looks,
+.control {
+    background: var(--color-primary-white-100, #ffedc5);
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    border: 2px solid black;
+    transition: transform 0.2s ease;
+}
+
+.events h3,
+.motion h3,
+.looks h3,
+.control h3 {
+    color: black;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    width: 100%;
+}
+
+/* Extra section adjustments */
+.extra .image-container {
+    display: flex;
+    gap: 1rem;
+    margin: 1.5rem 0;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 1rem;
+    padding: 2rem;
+    color: black;
+    position: relative;
+    background: transparent;
+}
+
+.footer a {
+    color: black
+}
+
+/* Hints Card */
+.hints-card {
+    background: #ffedc5;
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    max-width: 1000px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hints-card p {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    width: 100%;  /* Added */
+}
+
+.hints-card span {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+}
+
+.hints-card img[src*="/icons/"] {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.hints-card img[src*="/blocks/"] {
+    width: 120px;  /* Smaller than regular blocks */
+    height: 45px;
+    object-fit: contain;
+}
+
+.hints-card img:not([src*="/blocks/"], [src*="/icons/"]) {
+    max-width: 60%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 0.5rem;
+    display: block;  /* Added */
+    margin-left: auto;  /* Added */
+    margin-right: auto;  /* Added */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        padding: 2rem 1rem;
+    }
+
+    .header h1 {
+        font-size: 2.8rem;
+    }
+
+    .header p {
+        font-size: 1.3rem;
+        padding: 0.5rem;
+    }
+
+    .main-content {
+        padding: 0 1rem;
+    }
+
+    .step .image-container {
+        flex-direction: column;
+    }
+
+    .instruction-blocks img,
+    [class*="blocks"] img,
+    .hints img[src*="/blocks/"],
+    .step img[src*="/blocks/"],
+    .extra img[src*="/blocks/"],
+    .events img,
+    .motion img,
+    .looks img,
+    .control img {
+        width: 150px;
+        height: 55px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .hints-card {
+        padding: 1rem;
+    }
+
+    .hints-card img[src*="/blocks/"] {
+        width: 100px;
+        height: 38px;
+    }
+}
