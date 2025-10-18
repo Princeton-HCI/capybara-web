@@ -44,7 +44,7 @@ body::before {
 }
 
 .header::before {
-    display: none; /* Remove the header's pattern overlay */
+    display: none;
 }
 
 .header h1 {
@@ -189,11 +189,11 @@ h2 {
 .instruction-blocks .icon-card h3,
 .instruction-blocks .image-container h3 {
     text-align: center;
-    margin-bottom: 1rem; /* Adjust margin to match block inventory headings */
-    color: black; /* Ensure color is black */
-    font-size: 1.4rem; /* Match block inventory heading font size */
-    font-weight: 600; /* Match block inventory heading font weight */
-    width: 100%; /* Ensure heading takes full width of the card */
+    margin-bottom: 1rem;
+    color: black;
+    font-size: 1.4rem;
+    font-weight: 600;
+    width: 100%;
 }
 
 .instruction-blocks img {
@@ -227,18 +227,18 @@ h2 {
 .instruction-blocks .blocks-label,
 .instruction-blocks .setup-label {
     position: absolute;
-    top: -20px; /* Adjust vertical position */
+    top: -20px;
     left: 50%;
-    transform: translateX(-50%); /* Center horizontally */
-    background: #ffedc5; /* Match card background */
-    border: 2px solid black; /* Add border */
-    padding: 0.3rem 1.5rem; /* Adjust padding for shape */
-    border-radius: 8px; /* Subtle border-radius */
-    font-size: 1rem; /* Adjust font size */
-    font-weight: 600; /* Match heading font weight */
-    color: black; /* Match text color */
-    z-index: 1; /* Ensure it's above the card */
-    white-space: nowrap; /* Prevent text wrapping */
+    transform: translateX(-50%);
+    background: #ffedc5;
+    border: 2px solid black;
+    padding: 0.3rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+    z-index: 1;
+    white-space: nowrap;
 }
 
 .instruction-blocks .blocks-label::before,
@@ -247,11 +247,11 @@ h2 {
 .instruction-blocks .setup-label::after {
     content: '';
     position: absolute;
-    top: 100%; /* Position at the bottom of the label */
+    top: 100%;
     border: solid transparent;
     pointer-events: none;
     border-color: rgba(136, 183, 213, 0);
-    border-top-color: black; /* Color of the arrow/trapezoid point */
+    border-top-color: black;
     border-width: 8px;
     margin-top: 0px;
 }
@@ -266,8 +266,8 @@ h2 {
 .instruction-blocks .setup-label::after {
     left: 50%;
     transform: translateX(-50%);
-    border-top-color: #ffedc5; /* Match background color */
-    margin-top: -2px; /* Adjust to overlap border */
+    border-top-color: #ffedc5;
+    margin-top: -2px;
 }
 
 /* Steps */
@@ -304,19 +304,19 @@ h2 {
     flex-wrap: wrap;
 }
 
-.step .image-container img {
+.step .image-container img,
+.step .image-container video {
     max-width: 200px;
     height: auto;
     border-radius: 12px;
     transition: transform 0.2s ease;
-    /* object-fit: contain; */
 }
 
-.step .image-container img:hover {
+.step .image-container img:hover,
+.step .image-container video:hover {
     transform: scale(1.05);
 }
 
-/* Wide image container for larger images */
 .step .wide-image-container {
     display: flex;
     gap: 2rem;
@@ -343,13 +343,13 @@ h2 {
     align-items: center;
     gap: 1rem;
     flex-wrap: wrap;
-    min-height: 65px;  /* Match block height */
+    min-height: 65px;
 }
 
 .hints img[src*="/blocks/"] {
     vertical-align: middle;
     position: relative;
-    top: 5px;  /* Fine-tune vertical position */
+    top: 5px;
 }
 
 
@@ -374,11 +374,10 @@ p img[src*="/blocks/"] {
     object-fit: contain;
     margin: 0.5rem;
     filter: drop-shadow(0 4px 8px var(--shadow-color));
-    vertical-align: middle;  /* Added this */
+    vertical-align: middle;
     transition: transform 0.2s ease;
 }
 
-/* Remove the general filter styles and target specific images */
 [src*="/blocks/looks/"],
 img[alt*="Start Trail"],
 img[alt*="End Trail"] {
@@ -488,7 +487,7 @@ img[alt*="When"] {
     margin-bottom: 1rem;
     font-size: 1.1rem;
     line-height: 1.5;
-    width: 100%;  /* Added */
+    width: 100%;
 }
 
 .hints-card span {
@@ -505,7 +504,7 @@ img[alt*="When"] {
 }
 
 .hints-card img[src*="/blocks/"] {
-    width: 120px;  /* Smaller than regular blocks */
+    width: 120px;
     height: 45px;
     object-fit: contain;
 }
@@ -515,9 +514,9 @@ img[alt*="When"] {
     height: auto;
     border-radius: 8px;
     margin-top: 0.5rem;
-    display: block;  /* Added */
-    margin-left: auto;  /* Added */
-    margin-right: auto;  /* Added */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Responsive Design */
